@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered Button</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Optional: Background color for the page */
+    flex-direction: column; /* Added to align items in column */
+    font-family: 'Roboto', sans-serif; /* Change font to Roboto */
+  }
+
+  button {
+    margin-top: 20px; /* Added margin above the button */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.3s; /* Add transition for smooth hover effect */
+  }
+
+  button:hover {
+    background-color: #0056b3; /* Change color on hover */
+    transform: scale(1.05); /* Zoom in a bit on hover */
+  }
+
+  #instruction {
+    font-size: 18px;
+    margin-bottom: 20px; /* Added margin below the instruction text */
+  }
+</style>
+</head>
+<body>
+
+<p id="instruction">Click the Continue Button to get the Master623 Download!</p>
+<a href="page2.html"><button>Continue</button></a>
+
+</body>
+</html>
