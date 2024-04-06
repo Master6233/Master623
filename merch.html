@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merch</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Change font to Roboto */
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    margin-bottom: 20px;
+  }
+
+  .buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.3s; /* Added transition for transform */
+  }
+
+  .buttons button:hover {
+    background-color: #0056b3; /* Change color on hover */
+    transform: scale(1.05); /* Zoom in a bit on hover */
+  }
+
+  .merch-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .merch-link img {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .merch-link a {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .merch-link a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="buttons">
+    <button onclick="location.href='scripts.html'">Scripts</button>
+    <button onclick="location.href='exploits.html'">Exploits</button>
+    <button onclick="location.href='merch.html'">Merch</button>
+  </div>
+
+  <h1>Merch</h1>
+  
+  <div class="merch-link">
+    <img src="masterfeather.png" alt="Master Feather Style">
+    <a href="https://www.roblox.com/catalog/10909258108/Master-Feather-Style">Buy</a>
+  </div>
+</div>
+
+</body>
+</html>
