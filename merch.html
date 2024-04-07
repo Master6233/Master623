@@ -46,19 +46,23 @@
     transform: scale(1.05); /* Zoom in a bit on hover */
   }
 
-  .merch-link {
+  .merch-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
     margin-top: 20px;
   }
 
-  .merch-link img {
+  .merch-item {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+
+  .merch-item img {
     width: 200px;
     margin-bottom: 10px;
   }
 
-  .merch-link a {
+  .merch-item a {
     padding: 10px;
     background-color: #007bff;
     color: white;
@@ -67,13 +71,11 @@
     transition: background-color 0.3s, transform 0.3s;
   }
 
-  .merch-link a:hover {
+  .merch-item a:hover {
     background-color: #0056b3;
     transform: scale(1.05);
   }
 </style>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6507151523911619"
-     crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -86,14 +88,23 @@
 
   <h1>Merch</h1>
   
-  <div class="merch-link">
-    <img src="masterfeather.png" alt="Master Feather Style">
-    <a href="https://www.roblox.com/catalog/10909258108/Master-Feather-Style">Buy</a>
+  <div class="merch-container">
+    <div class="merch-item">
+      <img src="masterfeather.png" alt="Master Feather Style">
+      <h2>Master Feather Style</h2>
+      <a href="https://www.roblox.com/catalog/10909258108/Master-Feather-Style">Buy</a>
+    </div>
+    <div class="merch-item">
+      <img src="masterflames.png" alt="Master Flames Style">
+      <h2>Master Flames Style</h2>
+      <a href="https://www.roblox.com/catalog/17049972018/Master-Flames-Style">Buy</a>
+    </div>
   </div>
 </div>
 
 </body>
 </html>
+
 
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6507151523911619"
