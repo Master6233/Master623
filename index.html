@@ -8,21 +8,60 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Optional: Background color for the page */
-    font-family: 'Roboto', sans-serif; /* Change font to Roboto */
-    text-align: center; /* Center text */
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
   }
 
-  #container {
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container img {
+    height: 50px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column; /* Align items in a column */
+    margin-top: 70px; /* Adjusted margin to prevent overlap with fixed header */
   }
 
   button {
-    margin-top: 20px; /* Added margin above the button */
     padding: 10px 20px;
     font-size: 16px;
     color: white;
@@ -30,31 +69,89 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none; /* Remove underline */
-    transition: transform 0.3s; /* Add transition for smooth hover effect */
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s;
   }
 
   button:hover {
-    background-color: #0056b3; /* Change color on hover */
-    transform: scale(1.05); /* Zoom in a bit on hover */
+    background-color: #0056b3;
+    transform: scale(1.05);
   }
 
-  #instruction {
-    font-size: 18px;
-    margin-bottom: 20px; /* Added margin below the instruction text */
+  .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 100px; /* Adjusted padding to prevent content from being hidden behind fixed header */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+
+  .content-block {
+    max-width: 45%;
+    text-align: left;
+  }
+
+  .title {
+    color: #006EEA;
+  }
+
+  .section-header {
+    color: rgb(0, 132, 255);
+  }
+
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content-block {
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
   }
 </style>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6507151523911619"
-     crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div id="container">
-  <div id="instruction">Click the Continue Button to get the Master623 Download!</div>
-  <a href="exploits.html"><button>Continue</button></a>
+<header>
+  <div class="container">
+    <a href="index.html">
+      <img src="master623logo.png" alt="Master623 Logo">
+    </a>
+    <nav>
+      <ul>
+        <li><button onclick="location.href='scripts.html'">Scripts</button></li>
+        <li><button onclick="location.href='exploits.html'">Exploits</button></li>
+        <li><button onclick="location.href='merch.html'">Merch</button></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="content-wrapper">
+  <div class="content-block">
+    <h1 class="title">Premier Choice for Free</h1>
+    <p>
+      Discover on this exclusive Roblox script repository, where you'll find pristine, secure, and effortlessly navigable LUA scripts, free from any malicious intent!
+    </p>
+    <p>
+      Explore our extensive collection of free Roblox scripts or Roblox exploits and begin enjoying endless entertainment today!
+    </p>
+  </div>
+  <div class="content-block">
+    <h2 class="section-header">About This Roblox Scripting Resource</h2>
+    <p>
+      Discover here a plethora of Roblox hacking scripts capable of bypassing anti-cheat measures using powerful executors that evade false positives and neutralize antivirus detections. No more reliance on the Windows Store or alternate operating systems for exploiting.
+
+      Everyday, multiple unpatched Roblox exploits and scripts are uploaded, including auto farm and fly infinite jump hacks conveniently positioned at the bottom right of your game screen.
+
+      Access executors like jjsploit, known for its safety with the WeAreDevs API, along with Roblox Arsenal scripts and prompt updates to keep up with the game engine's version changes, typically occurring on Wednesdays, without needing to wait for notifications.
+    </p>
+  </div>
 </div>
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6507151523911619"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6507151523911619"
      crossorigin="anonymous"></script>
 <!-- Squire Responsive -->
 <ins class="adsbygoogle"
@@ -67,7 +164,5 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-
 </body>
 </html>
-
