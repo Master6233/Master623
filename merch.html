@@ -8,7 +8,7 @@
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif; /* Change font to Roboto */
+    font-family: 'Roboto', sans-serif;
   }
 
   .container {
@@ -24,10 +24,6 @@
     margin-bottom: 20px;
   }
 
-  .buttons {
-    margin-bottom: 20px;
-  }
-
   .buttons button {
     margin: 0 10px;
     padding: 10px 20px;
@@ -37,13 +33,13 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s, transform 0.3s; /* Added transition for transform */
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
   }
 
   .buttons button:hover {
-    background-color: #0056b3; /* Change color on hover */
-    transform: scale(1.05); /* Zoom in a bit on hover */
+    background-color: #0056b3;
+    transform: scale(1.05);
   }
 
   .merch-container {
@@ -58,23 +54,29 @@
   }
 
   .merch-item img {
-    width: 200px;
+    width: 100%; /* Make image responsive within the container */
+    max-width: 200px;
     margin-bottom: 10px;
   }
 
+  .merch-item h2 {
+    margin: 5px 0;
+  }
+
   .merch-item a {
+    display: block; /* Make the link fill the width of the container */
     padding: 10px;
     background-color: #14cc00;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 18px;
     transition: background-color 0.3s, transform 0.3s;
-    display: inline-block;
   }
 
   .merch-item a:hover {
     background-color: #0f9a00;
-    transform: scale(1.05); /* Zoom in a bit on hover */
+    transform: scale(1.05);
   }
 
   .countdown {
@@ -92,6 +94,7 @@
     <button onclick="location.href='scripts.html'">Scripts</button>
     <button onclick="location.href='exploits.html'">Exploits</button>
     <button onclick="location.href='merch.html'">Merch</button>
+    <button onclick="location.href='accounts.html'">Accounts</button>
   </div>
 
   <h1>Merch</h1>
@@ -106,7 +109,6 @@
       <img src="masterflames.png" alt="Master Flames Style">
       <h2>Master Flames Style</h2>
       <a href="https://www.roblox.com/catalog/17049972018/Master-Flames-Style">Buy</a>
-      <div id="countdown" class="countdown"></div>
     </div>
   </div>
 </div>
@@ -125,7 +127,6 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
 
 <script data-cfasync="false" src="//d263ut03kf37wj.cloudfront.net/?fktud=1041740"></script>
 
