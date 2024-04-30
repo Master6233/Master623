@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merch</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .buttons button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  .merch-container {
+    display: flex;
+    justify-content: space-evenly; /* Ensures spacing is even */
+    flex-wrap: wrap; /* Wraps onto the next line if space is insufficient */
+  }
+
+  .merch-item {
+    flex-basis: 45%; /* Adjust this value if you need more or less space */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .merch-item img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 300px; /* Limits the size */
+    height: auto;
+  }
+
+  .merch-item a {
+    display: block;
+    padding: 10px;
+    background-color: #14cc00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .merch-item a:hover {
+    background-color: #0f9a00;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+          <button onclick="location.href='scripts.html'">Scripts</button>
+          <button onclick="location.href='exploits.html'">Exploits</button>
+          <button onclick="location.href='merch.html'">Merch</button>
+          <button onclick="location.href='accounts.html'">Accounts</button>
+        </div>
+      
+        <h1>Merch</h1>
+        
+        <div class="merch-container">
+          <div class="merch-item">
+            <img src="Acc1.png" alt="Account 1">
+            <h2>Account 1</h2>
+            <a href="https://discord.gg/uWzhfcfBqj">Buy</a>
+          </div>
+          <div class="merch-item">
+            <img src="Acc2.png" alt="Account 2">
+            <h2>Account 2</h2>
+            <a href="https://discord.gg/uWzhfcfBqj">Buy</a>
+          </div>
+        </div>
+      </div>
+      
+      <a href="index.html">
+        <img src="master623logo.png" alt="Master623 Logo" style="position: absolute; top: 80px; left: 10px; width: 100px; height: auto;">
+      </a>
+      
+      <!-- Google AdSense Ad -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-6507151523911619"
+           data-ad-slot="7894418763"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      
+      </body>
+      </html>
