@@ -473,7 +473,7 @@ nav .navbar-wrapper .navbar-toggle {
 }
 
 .background-img {
-  min-height: 75vh; /* Adjust this as needed */
+  min-height: 100vh; /* Adjust this as needed */
   position: absolute; /* Required for absolute positioning of the child */
   top: 0;
   left: 0;
