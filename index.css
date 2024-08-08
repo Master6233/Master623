@@ -1,0 +1,554 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  font-family: Roboto;
+}
+
+nav {
+  position: relative;
+  background-image: linear-gradient(to right, rgb(161, 0, 0, 255), rgb(164, 4, 4), rgb(191, 4, 4), rgb(207, 4, 4), rgb(228, 4, 4), rgb(244, 4, 4), rgb(252, 4, 4), rgb(253, 1, 0, 255));
+  height: 77px; /* Adjust this value to make the banner thinner or thicker */
+  display: flex;
+  justify-content: center; /* Ensure center alignment for the navbar */
+  align-items: center;
+  margin-top: 8px;
+  justify-content: space-between; /* Ensure space between logo and links */
+}
+
+nav img, nav a {
+  display: block;
+}
+
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1450px;
+  padding: 0 1.5em; /* Adjust the padding to your needs */
+  margin: 0 auto;
+  
+}
+
+.navbar-wrapper ul {
+  display: flex;
+  padding-left: 3em;
+  list-style-type: none; /* Remove the bullet points */
+  margin-right: 650px;
+}
+
+.navbar-wrapper li {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px; /* Space between each link */
+}
+
+.navbar-wrapper ul li a {
+  padding: 15px 14px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+nav .navbar-wrapper .navbar-toggle {
+  margin-left: auto;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  align-self: center;
+  color: #FFF;
+  display: none;
+}
+
+.navbar-toggle:hover {
+  cursor: pointer;
+}
+
+.logo {
+  margin-left: 150px; /* Removed margin-left: 150px; */
+  text-align: left;
+  margin:0 20px 5px 5px;
+}
+
+.logo img {
+  height: 75px;
+}
+
+/* Ensure the navbar logo link is styled correctly */
+.logo a {
+  display: inline-block; /* Ensures the link wraps around the image properly */
+  cursor: pointer; /* Sets the cursor to pointer to indicate a clickable link */
+  text-decoration: none; /* Removes any underline from the link */
+}
+
+.logo a:hover {
+  background-color: transparent; /* Removes any background color on hover */
+  color: inherit; /* Ensures no color change on hover */
+}
+
+/* Remove any padding or margin from the logo link to avoid boxy appearance */
+.logo a,
+.logo img {
+  padding: 0;
+  margin: 0;
+  border: none; /* Removes any border */
+}
+
+/* Optional: Add any other styles you want to the logo image */
+.logo img {
+  display: block; /* Ensures the image is displayed as a block element */
+  height: 75px; /* Adjust height as needed */
+}
+
+.navbar-text {
+  display: flex; /* Align items horizontally */
+  list-style-type: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  margin-right: 650px;
+}
+
+.navbar-text li {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px; /* Space between each link */
+}
+
+.navbar-text li::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  width: 1px; /* Width of the line */
+  height: 20px; /* Height of the line */
+  background-color: white; /* Color of the line */
+  transform: translateY(-50%); /* Center the line vertically */
+}
+
+
+/* Remove the line for the first and last items */
+.navbar-text li:first-child::before
+ {
+  content: none;
+}
+
+
+.navbar-text a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation on hover */
+.navbar-text a:hover {
+  color: black; /* Change text color on hover */
+  transform: scale(1.1); /* Slightly enlarge the text on hover */
+}
+
+/* Active state */
+.navbar-text a:active {
+  color: #ffffff; /* Change text color on click */
+  transform: scale(0.95); /* Slightly shrink the text on click */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Add a shadow effect to simulate a press */
+}
+
+/* Add underline effect on hover */
+.navbar-text a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff; /* Adjust the color as needed */
+  transition: width 0.3s ease;
+}
+
+.navbar-text a:hover::after {
+  width: 100%;
+}
+
+.navbar-discord {
+  /* Aligns the Discord logo to the right */
+  margin-left: -110px; /* Adds spacing from the right edge */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-discord a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-discord img {
+  height: 40px; /* Adjust this value based on the size of your logo */
+  transition: transform 0.3s, filter 0.3s; /* Smooth transition for hover effects */
+  margin-right: 10px; /* Spacing between the logo and the text */
+}
+
+.navbar-discord img:hover {
+  transform: scale(1.1); /* Slightly enlarge the logo on hover */
+  filter: brightness(1.2); /* Make the logo slightly brighter on hover */
+}
+
+.discord-text {
+  font-size: 14px; /* Adjust the font size as needed */
+  font-weight: bold;
+  transition: transform 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  text-align: center; /* Center the text within each line */
+}
+
+.navbar-discord a:hover .discord-text {
+  transform: scale(1.1); /* Slightly enlarge the text on hover */
+  color: #000000; /* Change text color on hover */
+}
+
+/* Main content styles */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+ 
+}
+
+.left-content {
+  max-width: 60%;
+  text-align: center;
+}
+
+.right-content {
+  max-width: 35%;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 6.4em !important; /* Force the font size */
+  align-items: center;
+}
+
+.sub-title {
+  font-size: 1.2em !important; /* Force the font size */
+}
+
+.main-title,
+.right-title {
+  color: red;
+  font-size: 2.5em; /* Largest font size */
+  margin-bottom: 10px;
+}
+
+.sub-title,
+.right-sub-title {
+  color: grey;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.description,
+.right-description {
+  color: black;
+  font-size: 1em;
+}
+
+.cards-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  width: 300px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover .card-info {
+  opacity: 1; /* Show text on hover */
+}
+
+/* About Me and Socials Sections with New Font */
+/* Container for About Me and Socials */
+.about-socials {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align children horizontally */
+  padding: 20px;
+  background-color: #2e2e2e; /* Dark grey background */
+  color: white;
+  margin-top: 119px;
+  top: -60px;
+  position: relative;
+}
+
+/* Styling for About Me section */
+.about-me {
+  max-width: 100%;
+  text-align: center; /* Center text horizontally */
+  font-family: 'Poppins', sans-serif; /* Apply new font family */
+}
+
+.about-me h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Styling for Socials section */
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align children horizontally */
+  justify-content: center; /* Center content vertically if needed */
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Apply new font family */
+  margin-top: 20px; /* Add some spacing above the Socials section */
+}
+
+.socials h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.socials a {
+  display: block;
+  margin-top: 10px;
+}
+
+.socials img {
+  width: 50px; /* Adjust as needed */
+  height: auto;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Base style for the link */
+.zoom-link {
+  display: inline-block; /* Ensures transform works correctly */
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+  color: blue;
+}
+
+/* Zoom effect on hover */
+.zoom-link:hover {
+  transform: scale(1.1); /* Scale up the link to 120% of its original size */
+}
+
+.zoom-link:active {
+  color: red;
+}
+
+
+.bottom-navbar {
+  background-image: linear-gradient(to right,rgb(191, 4, 4), rgb(207, 4, 4), rgb(228, 4, 4), rgb(244, 4, 4), rgb(252, 4, 4), rgb(253, 1, 0, 255));
+  top: 60px;
+  position: relative;
+}
+
+/* Black navbar at the bottom with scroll-to-top button */
+.scroll-navbar {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+  margin-top: -60px;
+}
+
+
+.scroll-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px 20px;
+  margin: auto;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.scroll-button:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+
+.scroll-button:focus {
+  outline: none;
+}
+
+.scroll-icon {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+/* Styles for the progress bar */
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Thin bar height */
+  background: #676666; /* Light grey background */
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px; /* Adjust the height as needed */
+  width: 0;
+  background-image: linear-gradient(to right, rgb(161, 0, 0, 255), rgb(164, 4, 4), rgb(191, 4, 4), rgb(207, 4, 4), rgb(228, 4, 4), rgb(244, 4, 4), rgb(252, 4, 4), rgb(253, 1, 0, 255));
+  background-size: cover; /* Stretch the image to cover the progress bar */
+  z-index: 1000; /* Ensure it's on top */
+  transition: width 0.25s ease-in-out;
+}
+
+.background-img {
+  min-height: 180vh; /* Adjust this as needed */
+  position: absolute; /* Required for absolute positioning of the child */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/red-gradient-shade-free-png.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Ensure the background is behind all other content */
+}
+
+@media screen and (max-width: 840px) {
+  .navbar-wrapper ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: hsl(0, 100%, 40%);
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 1em;
+  }
+
+  nav .navbar-wrapper ul.active {
+    display: flex;
+  }
+
+  nav .navbar-wrapper .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-text li:first-child::before {
+    content: '';
+  }
+
+  .discord-text {
+    display: none;
+  }
+
+  .navbar-discord {
+    margin-left: auto; /* Aligns the Discord logo to the right */
+    margin-right: 20px; /* Adds spacing from the right edge */
+    display: flex;
+    align-items: center;
+  }
+
+  .main-title {
+    font-size: 2em; /* Adjust as needed */
+  }
+
+  .sub-title {
+    font-size: 1em; /* Adjust as needed */
+  }
+
+  .main-content{
+    display: grid;
+  }
+  .left-content{
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .right-content{
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .main-title {
+    font-size: 4em !important; /* Force the font size */
+    align-items: center;
+  }
+
+  .background-img {
+    visibility: hidden;
+}
+}
