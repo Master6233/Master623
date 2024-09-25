@@ -8,6 +8,7 @@
 body, html {
   width: 100%;
   font-family: Roboto;
+  background-image: linear-gradient(to top, rgb(161, 0, 0) 10%, rgb(207, 4, 4) 15%, white 75%);
 }
 
 nav {
