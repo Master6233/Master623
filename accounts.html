@@ -4,115 +4,154 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Merch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Link to Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- Link to your CSS file -->
+<link rel="stylesheet" href="index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+<link rel="website icon" type="png" href="images/master623logo.png">
 <style>
-  body {
+  .wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-  }
+    background-image: linear-gradient(to top, rgb(161, 0, 0) 3%, rgb(207, 4, 4) 15%, white 75%);
+    background-size: cover; /* Ensures that the background covers the entire body */
+    background-attachment: fixed; /* Ensures the background stays fixed in place */
+    min-height: 100vh; /* Ensures the body covers the entire viewport */
+}
 
-  .container {
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-  }
-
-  .buttons button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-
-  .buttons button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
+    position: relative;
+    z-index: 1; /* Ensures content is above the background */
+}
 
   .merch-container {
     display: flex;
-    justify-content: space-evenly; /* Ensures spacing is even */
-    flex-wrap: wrap; /* Wraps onto the next line if space is insufficient */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
   }
 
   .merch-item {
-    flex-basis: 45%; /* Adjust this value if you need more or less space */
-    margin-bottom: 20px;
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center; /* Center the link-box inside */
+  }
+
+  .link-box {
+    background-image: linear-gradient(to right, #eaeaea, #eeeeee, #ededed, #ffffff);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.7);
+  }
+
+  .link-box:hover {
+    transform: scale(1.05);
+  }
+
+  .link-box img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .link-box h2 {
+    font-size: 18px;
+    margin: 10px 0;
     text-align: center;
   }
 
-  .merch-item img {
-    width: 100%; /* Makes the image responsive */
-    max-width: 300px; /* Limits the size */
-    height: auto;
-  }
-
-  .merch-item a {
+  .link-box a {
     display: block;
     padding: 10px;
-    background-color: #14cc00;
+    background-image: linear-gradient(to right, #1cd700, #2aff00, #26aa26);
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    width: 100%; /* Make the button fill the box width */
+    text-align: center; /* Center the text inside the button */
     transition: background-color 0.3s, transform 0.3s;
   }
 
-  .merch-item a:hover {
+  .link-box a:hover {
     background-color: #0f9a00;
-    transform: scale(1.05);
   }
 </style>
 </head>
+<nav>
+  <div class="navbar-wrapper">
+    <a class="logo" href="index.html">
+      <img src="images/othermaster623logo.png" alt="Logo">
+    </a>
+    <ul class="navbar-text">
+      <li><a href="exploits.html">Exploits</a></li>
+      <li><a href="scripts.html">Scripts</a></li>
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="accounts.html">Accounts</a></li>
+    </ul>
+    <button class="navbar-toggle fa-solid fa-bars"></button>
+  </div>
+  <div class="navbar-discord">
+    <a href="https://discord.gg/uWzhfcfBqj" target="_blank" aria-label="Join us on Discord">
+        <img src="images/discord-white-icon (1).png" alt="Discord Logo">
+        <span class="discord-text">JOIN THE DISCORD</span>
+    </a>
+</div>
+</nav>
 <body>
-    <div class="container">
-        <div class="buttons">
-          <button onclick="location.href='scripts.html'">Scripts</button>
-          <button onclick="location.href='exploits.html'">Exploits</button>
-          <button onclick="location.href='merch.html'">Merch</button>
-          <button onclick="location.href='accounts.html'">Accounts</button>
-        </div>
-      
-        <h1>Merch</h1>
+
         
         <div class="merch-container">
-          <div class="merch-item">
-            <img src="Acc1.jpg" alt="Account 1">
-            <h2>Account 1</h2>
-            <a href="https://discord.gg/uWzhfcfBqj">Buy</a>
+          <div class="link-item">
+            <div class="link-box">
+              <img src="Acc1.jpg" alt="Account 1">
+              <h2>Account 1</h2>
+              <a href="https://discord.gg/uWzhfcfBqj">Buy</a>
+            </div>
           </div>
-          <div class="merch-item">
-            <img src="Acc2.jpg" alt="Account 2">
-            <h2>Account 2</h2>
-            <a href="https://discord.gg/uWzhfcfBqj">Buy</a>
+          <div class="link-item">
+            <div class="link-box">
+              <img src="Acc2.jpg" alt="Account 2">
+              <h2>Account 2</h2>
+              <a href="https://discord.gg/uWzhfcfBqj">Buy</a>
+            </div>
           </div>
         </div>
-      </div>
+        
+        <div class="progress-container  ">
+          <div class="progress-bar">
+        
+          </div>
+        </div>
+        
+        
+        <!-- Link to your JavaScript file -->
+        <script src="index.js"></script>      
+
       
-      <a href="index.html">
-        <img src="images/master623logo.png" alt="Master623 Logo" style="position: absolute; top: 80px; left: 10px; width: 100px; height: auto;">
-      </a>
-      
-      <!-- Google AdSense Ad -->
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-6507151523911619"
-           data-ad-slot="7894418763"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-  
-  <a href="https://discord.gg/uWzhfcfBqj">
-  <img src="joindiscord.png" alt="Discord server" style="position: absolute; top: 80px; left: 350px; width: 100px; height: auto;">
-</a>
-      
-      </body>
-      </html>
+</body>
+</html>
